@@ -18,4 +18,19 @@ public class MainClassTest extends MainClass {
         if (number < 45) {
         }  else System.out.println("The number is wright");
     }
+
+    @Test
+    public void testGetClassString () {
+
+        String text = MainClass.getClassString();
+
+        if (text.contains("hello")) {
+            System.out.println("The expression is right");
+        } else if (text.contains("Hello")){
+            System.out.println("The expression is right");
+        } else {
+            System.out.println("The expression is wrong");
+        }
+
+    }
 }
