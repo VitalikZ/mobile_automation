@@ -10,4 +10,12 @@ public class MainClassTest extends MainClass {
         if (number == 14) {
         } else System.out.println("The number is wrong");
     }
+
+    @Test
+    public void testGetClassNumber() {
+        int number = MainClass.getClassNumber();
+
+        if (number < 45) {
+        }  else System.out.println("The number is wright");
+    }
 }
